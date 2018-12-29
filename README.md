@@ -1,0 +1,1 @@
+# simple-playstore-copy
