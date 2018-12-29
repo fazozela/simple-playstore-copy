@@ -1,0 +1,101 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+}
+header{
+	background-color: #0F9D58;
+	color: white;
+	box-shadow: 0 0 1rem gray;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+header img{
+	width: 1.1rem;
+	height: 1.1rem;
+	flex: 0 0;
+	padding: 1rem;
+	align-self: center;
+}
+header h1{
+	font-size: 1.3rem;
+	margin: 1.3rem 0rem;
+	flex: 1 auto;
+}
+h2{
+	font-size: 1.3rem;
+	margin: 1.5rem;
+}
+section{
+	display: flex;
+	flex-flow: row nowrap;
+	overflow: auto;
+}
+section > div{
+	padding: 0.5rem;
+	min-width: 7.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	box-sizing: border-box;
+}
+section > div:nth-child(1){
+	margin-left: 1.5rem;
+}
+section > div > div{
+	background-color: white;
+	border-radius: 50%;
+	width: 5.5rem;
+	height: 5.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 4px #bdbdbd;
+}
+section > div > div > img{
+	flex: 0 0 auto;
+	width: 5rem;
+	height: 5rem;
+}
+main{
+	background-color: white;
+	padding: 0.5rem 1rem;
+	margin: 0.8rem;
+	display: flex;
+	flex-flow: row wrap;
+	box-shadow: 0 3px 4px #bdbdbd;
+}
+main > div{
+	display: flex;
+	flex: 1 1 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+main > div > img{
+	flex: 0 0 auto;
+	width: 2rem;
+	height: 2rem;
+}
+main > div > p{
+	flex: 1 1 auto;
+	margin-left: 0.7rem;
+}
+@media (min-width: 550px){
+	main > div{
+		flex: 1 1 50%;
+	}
+}
+@media (min-width: 900px){
+	main > div{
+		flex: 1 1 33%;
+	}
+}
+@media (min-width: 1200px){
+	main > div{
+		flex: 1 1 25%;
+	}
+}
